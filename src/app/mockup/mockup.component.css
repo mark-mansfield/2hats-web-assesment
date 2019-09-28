@@ -84,25 +84,9 @@
 }
 
 .hero__design-element {
-  /* background-color: green; */
   z-index: 1;
   flex: 1;
   width: 25%;
-}
-
-.hero__design-rotated-text {
-  font-size: 0.3rem;
-  word-spacing: 10px;
-  letter-spacing: 2px;
-  white-space: nowrap;
-  /* background-color: red; */
-  text-transform: uppercase;
-  color: white;
-  transform: rotate(-90deg);
-  position: relative;
-  left: 15vw;
-  top: 161px;
-  text-align: right;
 }
 
 .med-icon {
