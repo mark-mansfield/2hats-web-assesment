@@ -1,0 +1,78 @@
+<div class="container">
+  <div class="header">
+    <div class="header__nav">
+      <div class="header__nav-branding">
+        <img src="../../assets/icon.png" alt="mokuzai logo" title="mokuzai logo" />MOKUZAI
+      </div>
+      <div class="header__nav-search">
+        <i class="material-icons med-icon">
+          search
+        </i>
+      </div>
+      <div class="header__nav-burger-menu">
+        <i class="material-icons med-icon">
+          menu
+        </i>
+      </div>
+    </div>
+    <div class="header__hero">
+      <div class="hero__detail-title">
+        <h1>Great design is eliminating <br />all unnecessary details.</h1>
+        <div class="hero__detail-credit"><span class="title">MINH D. TRAN</span></div>
+      </div>
+      <div class="hero__design-element">
+        <div class="hero__design-rotated-text">curated wooden handpicked products</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section">
+  <div class="section__filter">
+    <div class="filter-item filter-highlight">Most Popular</div>
+    <div class="filter-item">Lowest Price</div>
+    <div class="filter-item">Highest Price</div>
+  </div>
+  <div class="section__list">
+    <div class="section__list-item" *ngFor="let item of items">
+      <img class="section__list-item-image" src="{{ item.image }}" alt="{{ item.title }}" title="click to view" />
+
+      <div class="section__list-item-details">
+        <div class="section__list-item-detail-heading">{{ item.title }}</div>
+        <div class="section__list-item-detail-price">${{ item.price }}.00</div>
+      </div>
+    </div>
+  </div>
+  <div class="section__paginator">
+    <div class="paginator-item highlight">01</div>
+    <div class="paginator-item">02</div>
+    <div class="paginator-item">03</div>
+    <div class="paginator-item">04</div>
+  </div>
+</div>
+<div class="footer">
+  <div class="footer__info">
+    <ul>
+      <li class="footer__info-title">info</li>
+      <li>About</li>
+      <li>Journal</li>
+      <li>Contact</li>
+    </ul>
+  </div>
+  <div class="footer__categories">
+    <ul>
+      <li class="footer__info-title">categories</li>
+      <li>Wood</li>
+      <li>Fashion</li>
+      <li>UX Stuff</li>
+    </ul>
+  </div>
+  <div class="footer__follow">
+    <ul>
+      <li class="footer__info-title">follow</li>
+      <li>Facebook</li>
+      <li>Twitter</li>
+      <li>Instagram</li>
+      <li>Pinterest</li>
+    </ul>
+  </div>
+</div>

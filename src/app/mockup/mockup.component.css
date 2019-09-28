@@ -1,0 +1,364 @@
+.container {
+  width: 100vw;
+  height: 400px;
+  margin-bottom: var(--nav-margin-device);
+}
+
+.header {
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/production2hats.appspot.com/o/studentPortal%2Fassessment-web-design%2Fhero.png?alt=media&token=83f29b93-3c2e-4e50-8641-0eda16a0d960');
+  background-size: cover;
+  background-position: center center;
+  height: 400px;
+  width: 100%;
+}
+
+.header__nav {
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.header__nav-branding {
+  margin-top: var(--nav-margin-device);
+  margin-left: var(--nav-margin-device);
+  letter-spacing: 8px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.header__nav-branding > img {
+  width: 1rem;
+  margin-right: 10px;
+}
+
+.header__nav-search,
+.header__nav-burger-menu {
+  margin-top: var(--nav-margin-device);
+  margin-right: var(--nav-margin-device);
+}
+
+.header__hero {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color: white;
+  height: 350px;
+}
+
+.hero__detail-title {
+  position: relative;
+  margin-top: 50px;
+  left: 20px;
+  flex: 1;
+  /* background-color: black; */
+  /* margin-left: var(--nav-margin-device); */
+}
+
+.hero__detail-title > h1 {
+  font-size: 1.3rem;
+  font-family: 'Overpass', sans-serif;
+  letter-spacing: 5px;
+  line-height: 1.6rem;
+}
+
+.hero__detail-credit {
+  margin-top: 10px;
+}
+
+.hero__detail-credit .title {
+  margin-left: 3rem;
+  font-size: 0.7rem;
+  color: #c4c1c1;
+}
+
+.hero__detail-credit:before {
+  border-bottom: 0.0625rem solid;
+  content: '';
+  color: #c4c1c1;
+  display: block;
+  margin-left: 0rem;
+  margin-bottom: -0.4rem;
+  width: 30px;
+}
+
+.hero__design-element {
+  /* background-color: green; */
+  z-index: 1;
+  flex: 1;
+  width: 25%;
+}
+
+.hero__design-rotated-text {
+  font-size: 0.3rem;
+  word-spacing: 10px;
+  letter-spacing: 2px;
+  white-space: nowrap;
+  /* background-color: red; */
+  text-transform: uppercase;
+  color: white;
+  transform: rotate(-90deg);
+  position: relative;
+  left: 15vw;
+  top: 161px;
+  text-align: right;
+}
+
+.med-icon {
+  font-size: var(--med-icon-size);
+}
+
+.section {
+  background-color: #efefef;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* pack down to 1 col grid */
+.section__list {
+  display: grid;
+  grid-template-areas: 'a';
+  grid-gap: 20px;
+  row-gap: 20px;
+  grid-auto-columns: 300px;
+}
+
+.section__list > * {
+  height: 380px;
+}
+
+.section__list-item {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.section__list-item-image {
+  width: 100%;
+}
+
+.section__list-item-detail-heading {
+  margin-bottom: 10px;
+}
+
+.section__list-item-details {
+  margin-top: 20px;
+}
+
+.section__paginator,
+.section__filter {
+  display: flex;
+  justify-content: center;
+}
+
+.section__paginator {
+  margin-top: 20px;
+}
+
+.section__filter {
+  margin-bottom: 40px;
+}
+
+.paginator-item {
+  padding-bottom: 10px;
+  margin-right: 20px;
+  color: rgb(41, 41, 41);
+}
+.filter-item {
+  padding-top: 10px;
+  color: rgb(41, 41, 41);
+  border-top: 1px solid white;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.highlight {
+  border-bottom: 1px solid rgb(41, 41, 41);
+}
+
+.filter-highlight {
+  border-top: 1px solid rgb(41, 41, 41);
+}
+
+.footer {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.footer__info-title {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: grey;
+  margin-bottom: var(--nav-margin-device);
+}
+
+.footer__follow > ul > li:nth-child(3) {
+  color: dodgerblue;
+}
+
+.footer__follow > ul > li:nth-child(5) {
+  color: rgb(241, 61, 16);
+}
+/* iphone 5 */
+@media (min-width: 18rem) {
+  .hero__design-rotated-text {
+    font-size: 0.09rem;
+    word-spacing: 10px;
+    letter-spacing: 2px;
+    white-space: nowrap;
+    /* background-color: red; */
+    text-transform: uppercase;
+    color: white;
+    transform: rotate(-90deg);
+    position: absolute;
+    left: 55vw;
+    top: 194px;
+    text-align: right;
+  }
+}
+
+/* iphone 6/7/8 */
+@media (min-width: 21rem) {
+  .hero__design-rotated-text {
+    font-size: 0.09rem;
+    word-spacing: 10px;
+    letter-spacing: 2px;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: white;
+    transform: rotate(-90deg);
+    position: absolute;
+    left: 61vw;
+    top: 194px;
+    text-align: right;
+  }
+}
+/* iphone 6/7/8 plus */
+@media (min-width: 25rem) {
+  .hero__design-rotated-text {
+    left: 64vw;
+    top: 194px;
+    text-align: right;
+  }
+}
+
+/* ipad */
+@media (min-width: 28rem) {
+  .hero__design-rotated-text {
+    left: 80vw;
+    top: 194px;
+    text-align: right;
+  }
+}
+
+@media (min-width: 48rem) {
+  .section__list {
+    width: 95%;
+    grid-template-areas: 'a a a';
+    grid-gap: 20px;
+    row-gap: 20px;
+    grid-auto-columns: 31.5%;
+  }
+}
+
+/* ipad pro */
+@media (min-width: 64rem) {
+  .hero__design-rotated-text {
+    left: 85.5vw;
+    top: 194px;
+    text-align: right;
+  }
+}
+
+/* pack down to 3 col grid */
+@media (min-width: 50rem) {
+  .section__list {
+    width: 95%;
+    grid-template-areas: 'a a a ';
+    grid-gap: 20px;
+    row-gap: 20px;
+    grid-auto-columns: 32%;
+  }
+}
+
+/* desktop */
+@media (min-width: 90rem) {
+  .container {
+    padding: 20px;
+    height: 420px;
+  }
+  .header__nav-branding {
+    margin-top: var(--nav-margin);
+    margin-left: var(--nav-margin);
+  }
+
+  .header__nav-search,
+  .header__nav-burger-menu {
+    margin-top: var(--nav-margin);
+    margin-right: var(--nav-margin);
+  }
+
+  .section__list {
+    width: 900px;
+    grid-template-areas: 'a a a a';
+    grid-gap: 20px;
+    row-gap: 20px;
+    grid-auto-columns: 23.5%;
+  }
+
+  .section__list > * {
+    height: 300px;
+  }
+
+  .section__list-item {
+    flex: 1;
+  }
+
+  .hero__detail-title {
+    margin-top: 50px;
+    margin-left: 25%;
+    flex: 1;
+  }
+
+  .hero__detail-title > h1 {
+    font-size: 2rem;
+    font-family: 'Overpass', sans-serif;
+    letter-spacing: 5px;
+    line-height: 2.3rem;
+  }
+
+  .hero__detail-credit {
+    margin-top: 2rem;
+    width: 300px;
+  }
+
+  .hero__design-element {
+    /* background-color: green; */
+    z-index: 1;
+    flex: 1;
+  }
+
+  .hero__design-rotated-text {
+    left: 89vw;
+    top: 250px;
+    text-align: right;
+  }
+
+  .footer {
+    justify-content: flex-start;
+    margin-top: 40px;
+    margin-left: 20px;
+  }
+
+  .footer__info,
+  .footer__categories {
+    margin-right: 80px;
+  }
+}
