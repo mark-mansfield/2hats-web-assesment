@@ -20,8 +20,8 @@
 }
 
 .header__nav-branding {
-  margin-top: var(--nav-margin-device);
-  margin-left: var(--nav-margin-device);
+  margin-top: 20px;
+  margin-left: 20px;
   letter-spacing: 8px;
   flex: 1;
   display: flex;
@@ -35,25 +35,21 @@
 
 .header__nav-search,
 .header__nav-burger-menu {
-  margin-top: var(--nav-margin-device);
-  margin-right: var(--nav-margin-device);
+  margin-top: 20px;
+  margin-right: 20px;
 }
 
 .header__hero {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
   color: white;
   height: 350px;
 }
 
 .hero__detail-title {
-  position: relative;
   margin-top: 50px;
-  left: 20px;
-  flex: 1;
-  /* background-color: black; */
-  /* margin-left: var(--nav-margin-device); */
+  margin-left: 20px;
 }
 
 .hero__detail-title > h1 {
@@ -87,6 +83,7 @@
   z-index: 1;
   flex: 1;
   width: 25%;
+  background-color: pink;
 }
 
 .med-icon {
@@ -112,12 +109,11 @@
 }
 
 .section__list > * {
-  height: 380px;
+  height: auto;
 }
 
 .section__list-item {
   width: 100%;
-  margin-bottom: 20px;
 }
 
 .section__list-item-image {
@@ -129,7 +125,11 @@
 }
 
 .section__list-item-details {
-  margin-top: 20px;
+  margin: 20px 0;
+}
+
+.section__list-item-detail-price {
+  font-size: 12px;
 }
 
 .section__paginator,
@@ -139,6 +139,9 @@
 }
 
 .section__paginator {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
   margin-top: 20px;
 }
 
@@ -148,12 +151,11 @@
 
 .paginator-item {
   padding-bottom: 10px;
-  margin-right: 20px;
-  color: rgb(41, 41, 41);
 }
+
 .filter-item {
   padding-top: 10px;
-  color: rgb(41, 41, 41);
+
   border-top: 1px solid white;
   margin-left: 10px;
   margin-right: 10px;
@@ -197,78 +199,46 @@
     word-spacing: 10px;
     letter-spacing: 2px;
     white-space: nowrap;
-    /* background-color: red; */
     text-transform: uppercase;
     color: white;
-    transform: rotate(-90deg);
-    position: absolute;
-    left: 55vw;
-    top: 194px;
+    writing-mode: vertical-lr;
+    transform: rotate(-180deg);
+    padding-left: 22px;
+    margin-top: 20px;
     text-align: right;
+  }
+
+  .section__list {
+    grid-auto-columns: 280px;
   }
 }
 
 /* iphone 6/7/8 */
-@media (min-width: 21rem) {
-  .hero__design-rotated-text {
-    font-size: 0.09rem;
-    word-spacing: 10px;
-    letter-spacing: 2px;
-    white-space: nowrap;
-    text-transform: uppercase;
-    color: white;
-    transform: rotate(-90deg);
-    position: absolute;
-    left: 61vw;
-    top: 194px;
-    text-align: right;
-  }
-}
-/* iphone 6/7/8 plus */
-@media (min-width: 25rem) {
-  .hero__design-rotated-text {
-    left: 64vw;
-    top: 194px;
-    text-align: right;
-  }
-}
 
 /* ipad */
-@media (min-width: 28rem) {
-  .hero__design-rotated-text {
-    left: 80vw;
-    top: 194px;
-    text-align: right;
+@media (min-width: 49rem) {
+  .section__list {
+    width: 670px;
+    grid-template-areas: 'a a a';
+    grid-auto-columns: 210px;
   }
 }
 
 @media (min-width: 48rem) {
   .section__list {
-    width: 95%;
+    width: 670px;
     grid-template-areas: 'a a a';
-    grid-gap: 20px;
-    row-gap: 20px;
-    grid-auto-columns: 31.5%;
+    grid-auto-columns: 210px;
   }
 }
 
-/* ipad pro */
-@media (min-width: 64rem) {
-  .hero__design-rotated-text {
-    left: 85.5vw;
-    top: 194px;
-    text-align: right;
-  }
-}
-
-/* pack down to 3 col grid */
-@media (min-width: 50rem) {
+@media (min-width: 60rem) {
   .section__list {
-    width: 95%;
-    grid-template-areas: 'a a a ';
+    width: 910px;
+    grid-template-areas: 'a a a a';
     grid-gap: 20px;
     row-gap: 20px;
-    grid-auto-columns: 32%;
+    grid-auto-columns: 210px;
   }
 }
 
@@ -297,18 +267,13 @@
     grid-auto-columns: 23.5%;
   }
 
-  .section__list > * {
-    height: 300px;
-  }
-
   .section__list-item {
     flex: 1;
   }
 
   .hero__detail-title {
     margin-top: 50px;
-    margin-left: 25%;
-    flex: 1;
+    margin-left: 206px;
   }
 
   .hero__detail-title > h1 {
@@ -324,15 +289,13 @@
   }
 
   .hero__design-element {
-    /* background-color: green; */
+    background-color: green;
     z-index: 1;
     flex: 1;
   }
 
   .hero__design-rotated-text {
-    left: 89vw;
-    top: 250px;
-    text-align: right;
+    padding-left: 40px;
   }
 
   .footer {
